@@ -1,0 +1,148 @@
+@import "src/assets/scss/index.scss";
+
+aside {
+  width: 105px;
+  height: calc(100vh - #{$menu-height});
+  
+}
+
+.aside-expanded {
+  width: 370px;
+}
+
+.element-picker-tray {
+  width: 105px;
+  position: fixed;
+  height: calc(100vh - #{$menu-height});
+  background-color: #272727;
+  color: #969696;
+  overflow: hidden;
+  display: flex;
+}
+
+.element-picker-tray-expanded {
+  width: 370px;
+}
+
+.elements-ul-container {
+  background-color: #fff;
+  flex: 25%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-right:1px solid #d8d8d8;
+}
+
+.element-picker-tray ul {
+  // background-color: #272727;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.element-picker-tray li {
+  padding: 15px 0;
+  font-size: 13px;
+}
+.element-picker-tray li svg{
+  font-size: 15px;
+}
+
+.element-picker-tray li:hover {
+  color: #484848;
+  cursor: pointer;
+}
+
+.element-unselected {
+  background-color: #fff;
+}
+
+.element-selected {
+  color: #484547;
+  background-color: #fff;
+  border-right: 2px solid #0089ff;
+}
+
+.border-tr-radius-15 {
+  border-top-right-radius: 15px;
+}
+
+.border-br-radius-15 {
+  border-bottom-right-radius: 15px;
+}
+
+.items-tray {
+  flex: 75% 1;
+  background-color: #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.collapse-btn {
+  background-color: #272727;
+  height: 80px;
+  width: 15px;
+  position: relative;
+  left: 100%;
+  color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.collapse-btn:hover {
+  cursor: pointer;
+}
+
+.collapse-btn svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  // width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px #d8d8d8;
+  border-radius: 10px;
+  padding:0px 3px;
+  width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7d7d7d;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #525252;
+}
+
+@media only screen and (max-width: 440px) {
+  .aside-expanded {
+    width: 95vw;
+  }
+  .element-picker-tray-expanded {
+    width: 95vw;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  aside {
+    z-index: 1;
+    position: absolute;
+  }
+}
+
+.aside-expanded {
+  z-index: 2;
+}

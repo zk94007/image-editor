@@ -1,0 +1,14 @@
+.zoom-menu {
+  //max-height: 450px;
+  overflow: auto;
+  min-width: 80px;
+  > li {
+    font-size: 16px;
+    min-height: 42px;
+  }
+  .seperator {
+    border: none;
+    border-bottom: 1px solid;
+    border-color: lightgray;
+  }
+}

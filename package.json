@@ -1,0 +1,60 @@
+{
+  "name": "smb2",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-regular-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@material-ui/core": "^4.3.1",
+    "@material-ui/icons": "^4.5.1",
+    "axios": "^0.19.0",
+    "chart.js": "^2.8.0",
+    "d3": "^5.12.0",
+    "deep-freeze": "0.0.1",
+    "html2canvas": "1.0.0-alpha.12",
+    "konva": "^3.4.0",
+    "lodash": "^4.17.15",
+    "node-sass": "^4.12.0",
+    "quill": "^1.3.6",
+    "react": "^16.8.6",
+    "react-alice-carousel": "^1.17.0",
+    "react-color": "^2.17.3",
+    "react-confirm-alert": "^2.4.1",
+    "react-cropper": "^1.2.0",
+    "react-dom": "^16.8.6",
+    "react-dropzone": "^10.2.1",
+    "react-horizontal-scrolling-menu": "^0.7.4",
+    "react-image-crop": "^8.2.0",
+    "react-konva": "^16.8.7-3",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.0.1",
+    "styled-components": "^4.4.1",
+    "superagent": "^5.1.2",
+    "use-image": "^1.0.4",
+    "victory": "^33.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+.backgrounds-tray {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.backgrounds-tray div {
+    width: 45%;
+    margin: 2.5%;
+}
+
+.backgrounds-tray div:hover {
+    cursor: pointer;
+}
+
+.backgrounds-tray img {
+    width: 100%;
+}

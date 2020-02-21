@@ -1,0 +1,29 @@
+.photos-tray {
+    display: flex;
+    flex-wrap: wrap
+}
+.category-tray {
+    display: flex;
+    flex-direction: row;
+}
+
+.alice-carousel {
+    overflow: hidden;
+    width: 100% !important;
+}
+.photos-tray div {
+    width: 45%;
+    margin: 2.5%;
+}
+
+.photos-tray div:hover {
+    cursor: pointer;
+}
+
+.category-tray img{
+    border-radius: 5px;
+    height: 40px;
+}
+.category-tray img, .photos-tray img {
+    width: 100%;
+}

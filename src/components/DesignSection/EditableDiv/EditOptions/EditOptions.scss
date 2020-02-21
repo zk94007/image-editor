@@ -1,0 +1,130 @@
+@import "src/assets/scss/index.scss";
+.edit-options {
+  left: 0;
+  width: 100%;
+}
+
+.editable-div-wrapper-expand {
+  .edit-options {
+    left: $expand-wrapper-width;
+    width: calc(100% - #{$expand-wrapper-width});
+  }
+}
+
+.aside-expanded + .editable-div-wrapper-shrink {
+  .edit-options {
+    left: $shirnk-wrapper-width;
+    width: calc(100% - #{$shirnk-wrapper-width});
+  }
+}
+
+.edit-options {
+  z-index: 15;
+  position: fixed;
+  top: $option-wrapper-height;
+  height: auto;
+  min-height: 60px;
+  background-color: #fff;
+  box-shadow: 0px 2px 2px #ccc;
+  text-align: left;
+}
+
+.options-wrapper {
+  height: 100%;
+  position: relative;
+  overflow-x: auto;
+  display: flex;
+}
+
+.options-wrapper a {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  flex-basis: 60px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  color: black;
+}
+
+.options-wrapper a > * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.options-wrapper a > h4 {
+  height: 1em;
+}
+
+.options-wrapper a.selected {
+  background-color: #eaeaea;
+}
+
+.options-wrapper a.has-hover:hover {
+  cursor: pointer;
+  background-color: #eaeaea;
+}
+
+.edit-options .move-right {
+  margin-left: auto;
+}
+
+.edit-options .move-left,
+.edit-options .move-right {
+  display: flex;
+}
+
+.edit-options button {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+}
+// .options-wrapper .position-layer,
+// .options-wrapper .spacing-layer {
+//   width: 80px;
+// }
+
+.options-wrapper {
+  .MuiButton-label {
+    text-transform: capitalize;
+  }
+  .font-change {
+    width: 80px;
+    white-space: nowrap;
+    //overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+    margin-right: 5px;
+    button {
+      width: 100%;
+      > .MuiButton-label {
+        display: inline-block;
+        line-height: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  .BAR_COLOR {
+    width: 45px;
+  }
+}
+
+.options-wrapper {
+  .web {
+    display: flex;
+    svg {
+      margin: auto;
+    }
+  }
+  @media only screen and (max-width: 720px) {
+    web {
+      display: none;
+    }
+  }
+}

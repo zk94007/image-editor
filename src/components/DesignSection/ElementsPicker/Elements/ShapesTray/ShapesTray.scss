@@ -1,0 +1,31 @@
+.elements-tray {
+    display: flex;
+    flex-wrap: wrap;
+    .elements-rect {
+        color: red;
+    }
+    .elements-circle {
+        color: green;
+    }
+}
+
+.elements-tray div {
+    width: 45%;
+    margin: 2.5%;
+}
+
+.elements-tray div:hover {
+    cursor: pointer;
+}
+
+.elements-tray svg {
+    width: 100% !important;
+}
+
+/* .chart-container {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    display: none;
+    
+} */

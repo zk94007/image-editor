@@ -1,0 +1,22 @@
+.position-container {
+  width: 400px;
+  margin: 1em;
+  .heading {
+    margin-bottom: 8px;
+    span {
+      font-size: 0.8em;
+      color: lightgray;
+      padding-left: 8px;      
+    }    
+  }
+  .row {
+    display: flex;
+    .col {
+      width: 50%;
+      button .MuiButton-label {
+       justify-content: left;
+      }
+    }
+    
+  }
+}

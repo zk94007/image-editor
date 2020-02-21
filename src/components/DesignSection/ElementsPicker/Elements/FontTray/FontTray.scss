@@ -1,0 +1,9 @@
+.font-container {
+  .MuiButton-root {
+    justify-content: left;
+    color: #969696;
+    @media only screen and (max-width: 720px) {
+      color: black;
+    }
+  }
+}

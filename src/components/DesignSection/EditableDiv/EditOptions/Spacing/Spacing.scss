@@ -1,0 +1,51 @@
+.spacing-container {
+  padding: 15px 10px;
+  width: 250px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+
+  > .labels > *,
+  .modifiers > * {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .labels > * {
+    line-height: 24px;
+  }
+
+  .modifiers > div {
+    display: flex;
+    align-items: center;
+    > * {
+      min-width: 50px;
+      box-sizing: border-box;
+      padding: 0 10px;
+    }
+    > svg {
+      cursor: pointer;
+    }
+  }
+}
+
+.anchor-text {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: 12px;
+  justify-content: space-between;
+
+  img {
+    &:hover {
+      background-color: lightgray;
+      border-radius: 3px;
+    }
+    &.selected {
+      background-color: lightgray;
+      border-radius: 3px;
+    }
+    padding: 5px 5px;
+    cursor: pointer;
+  }
+}

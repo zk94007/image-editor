@@ -1,0 +1,25 @@
+.menu {
+  padding-left: 1em;
+  padding-right: 1em;
+  position: fixed;
+  // top: 0;
+  // left: 0;
+  z-index: 16;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  // background-color: #d2dcd1;
+  border-bottom: 1px solid #d5d5d5;
+  align-items: center;
+
+  > div {
+    padding-right: 20px;
+    display: flex;
+
+    > div {
+      cursor: pointer;
+      padding: 10px;
+    }
+  }
+}

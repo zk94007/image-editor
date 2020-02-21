@@ -1,0 +1,32 @@
+.footer-container {
+  display: none;
+  &.desktop {
+    box-sizing: border-box;
+    position: fixed;
+    width: 100px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+  }
+  @media only screen and (max-width: 720px) {
+    left: 15px;
+  }
+
+  /*   @media only screen and (max-width: 720px) {
+    &.mobile {
+      display: flex;
+      position: fixed;
+      width: auto;
+      bottom: 15px;
+      left: 15px;
+    }
+    &.desktop {
+      display: none;
+    }
+  }
+ */
+}

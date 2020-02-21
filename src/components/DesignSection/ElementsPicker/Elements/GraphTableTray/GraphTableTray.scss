@@ -1,0 +1,86 @@
+.change-chart-type {
+  margin: 10px;
+  .MuiInputBase-root {
+    width: 100%;
+    background-color: whitesmoke;
+    .MuiSelect-root {
+      text-align: left;
+      padding-left: 5px;
+    }
+  }
+}
+.graph-table-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100% - 60px);
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  > table {
+    text-align: left;
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    border-left: 1px solid #edf0f2;
+    border-bottom: 1px solid #edf0f2;
+
+    td {
+      &:first-child {
+        min-width: 70px;
+      }
+      padding: 0;
+      min-width: 30px;
+      &.blank {
+        max-width: 40px;
+      }
+
+      input {
+        box-shadow: inset -1px 1px 0 0.5px #edf0f2;
+        box-sizing: border-box;
+        font-size: 16px;
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        // color: whitesmoke;
+        padding: 5px;
+
+        &.error {
+          position: relative;
+          z-index: 1;
+          box-shadow: inset -1px 1px 0 0.5px #f84856, -1px 1px 0 0.5px #f84856;
+        }
+
+        &:focus {
+          outline: none;
+          position: relative;
+          z-index: 1;
+          box-shadow: inset -1px 1px 0 0.5px #00c4cc, -1px 1px 0 0.5px #00c4cc;
+        }
+      }
+    }
+  }
+
+  .excel-paste-container {
+    padding: 1em;
+    box-sizing: border-box;
+    textarea {
+      outline: none;
+      box-sizing: border-box;
+      width: 100% !important;
+      min-height: 30px;
+      border-radius: 5px;
+      font-size: 12px;
+      background: transparent;
+      padding: 5px;
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        color: #989494;
+      }
+    }
+  }
+}

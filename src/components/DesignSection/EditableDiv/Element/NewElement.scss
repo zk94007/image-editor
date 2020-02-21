@@ -1,0 +1,80 @@
+.ql-editor {
+  overflow: hidden;
+  //overflow-y: visible;
+  //overflow-x: visible;
+  //padding: 0;
+  ul,
+  ol {
+    list-style-position: outside;
+    position: relative;
+    list-style: none;
+    padding-left: 0.5em;
+    li {
+      padding-left: 0 !important;
+      margin-left: 1em;
+      &:before {
+        content: none;
+      }
+      &:before {
+        margin-left: 0 !important;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+
+  ul li {
+    list-style: disc;
+  }
+
+  ol {
+    list-style: decimal;
+    li {
+      list-style-type: decimal;
+    }
+  }
+
+  /* ol {
+    counter-reset: item;
+    li:before {
+      content: counters(item, ".") ". ";
+      counter-increment: item;
+    }
+  } */
+  .ql-align-justify {
+    white-space: normal;
+  }
+
+  ol {
+    counter-reset: item;
+    list-style-type: none;
+    li {
+      display: block;
+    }
+    
+    li:before {
+      content: counter(item) ".";
+      counter-increment: item;
+      letter-spacing: 0.2em;
+    }
+  }
+    
+    
+}
+
+// Editable div use for text editor
+#contenteditable {
+  display: flex;
+  position: absolute;
+  margin: 0;
+  overflow: hidden;
+  overflow-x: visible;
+  overflow-y: visible;
+  background: none;
+  outline: none;
+  resize: none;
+  transform-origin: left top;
+  word-wrap: break-word;
+  border: 1px solid lightgray;
+  height: auto;
+}

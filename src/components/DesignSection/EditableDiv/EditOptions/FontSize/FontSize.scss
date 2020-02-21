@@ -1,0 +1,12 @@
+.form-control  {
+  min-width: 55px !important;
+  height: 30px;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.MuiInput-underline {
+  &:before, &:after {
+    content: none !important;
+  }
+}

@@ -1,0 +1,52 @@
+.hue-horizontal {
+  div {
+    div {
+      top: -4px!important;
+      transform: translate(-9px, -5px)!important;
+      width: 12px!important;
+      height: 12px!important;
+      background: #2f2f2f!important;
+      box-shadow: none!important;
+    }
+  }
+}
+
+.adjustment-container {
+  padding: 10px 10px;
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  .MuiGrid-grid-sm-4{
+    text-align: right;
+  }
+  .hue-slider {
+    .MuiSlider-track {
+      display: none;
+    }
+    .MuiSlider-rail {
+      background: linear-gradient(90deg, rgba(255,0,255,1) 0%, rgba(0,0,255,1) 0%, rgba(255,0,0,1) 20%, rgba(255,255,0,1) 40%, rgba(0,255,0,1) 60%, rgba(0,0,255,1) 80%, rgba(255,0,255,1) 100%);
+      opacity: 1;
+    }
+  }
+}
+
+.hue-slider-pro {
+  display: grid;
+  align-items: center;
+}
+
+.adjustment-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+
+.MuiSlider-thumbColorPrimary{
+  background: #2f2f2f !important;
+}
+
+.range{
+  color: #2f2f2f !important;
+}

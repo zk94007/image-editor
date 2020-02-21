@@ -1,0 +1,19 @@
+.color-picker-mobile {
+  display: none;
+  @media only screen and (max-width: 720px) {
+    display: flex;
+  }
+  > * {
+    margin: auto;
+  }
+}
+
+.paper {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  bottom: 0px;
+  background-color: lightgray;
+  border: 2px solid #000;
+  padding: 2px 4px 4px;
+}

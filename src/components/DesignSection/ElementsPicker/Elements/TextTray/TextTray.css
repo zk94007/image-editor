@@ -1,0 +1,9 @@
+.text-tray {
+    text-align: left;
+    color: #969696;
+    padding: 0 15px;
+}
+
+.text-tray div:hover {
+    cursor: pointer;
+}

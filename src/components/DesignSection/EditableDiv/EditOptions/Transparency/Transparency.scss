@@ -1,0 +1,20 @@
+.sliderContainer {
+  padding: 20px 10px;
+  width: 250px;
+  font-size: 12px;
+  display: flex;
+  font-size: 12px;
+
+  > *:not(:first-child) {
+    margin-left: 10px;
+  }
+  > label {
+    margin-bottom: 0;
+  }
+  .textBox {
+    width: 40px;
+    box-shadow: none;
+    background: none;
+    border-color: transparent;
+  }
+}
