@@ -22,9 +22,9 @@ let currentUrl =  decodeURIComponent(window.location.href);
     window.location.assign(currentUrl.split('?')[0]);
   }
   else if (!localStorage.getItem("id_token")) {
-    if (window.confirm("Please login first!")) {
-      window.location.assign(redirectUri);
-    }
+    // if (window.confirm("Please login first!")) {
+    //   window.location.assign(redirectUri);
+    // }
   }
   else if(localStorage.getItem("id_token") && getUrlVars(currentUrl).token !== undefined){
     window.location.assign(currentUrl.split('?')[0]);
